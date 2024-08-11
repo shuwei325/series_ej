@@ -1,0 +1,6 @@
+
+.Rhistory
+*.qmd
+.Rproj.user
+
+/.quarto/
