@@ -26,7 +26,7 @@ book:
   # appendices:
   #   - appendixA.qmd
   search: true  
-  repo-url: https://github.com/shuwei325/series_ejercicios/
+  repo-url: https://github.com/shuwei325/series_ej/
   repo-actions: [edit]
   # downloads: [pdf]
 lang: es
