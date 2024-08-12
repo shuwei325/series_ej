@@ -203,6 +203,11 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./data.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bases de datos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./Lista_1.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Lista de ejercicios 1</span></a>
   </div>
 </li>
@@ -257,7 +262,12 @@ window.Quarto = {
     <h2 id="toc-title">Índice general</h2>
    
   <ul>
-  <li><a href="#un-estudio-de-simulaciones-del-proceso-ar1" id="toc-un-estudio-de-simulaciones-del-proceso-ar1" class="nav-link active" data-scroll-target="#un-estudio-de-simulaciones-del-proceso-ar1">Un estudio de simulaciones del proceso AR(1)</a></li>
+  <li><a href="#un-estudio-de-simulaciones-del-proceso-ar1" id="toc-un-estudio-de-simulaciones-del-proceso-ar1" class="nav-link active" data-scroll-target="#un-estudio-de-simulaciones-del-proceso-ar1">Un estudio de simulaciones del proceso AR(1)</a>
+  <ul class="collapse">
+  <li><a href="#parte-i-considere-el-proceso-ar1-que-está-definido-por-el-siguiente-proceso-estocástico-lineal" id="toc-parte-i-considere-el-proceso-ar1-que-está-definido-por-el-siguiente-proceso-estocástico-lineal" class="nav-link" data-scroll-target="#parte-i-considere-el-proceso-ar1-que-está-definido-por-el-siguiente-proceso-estocástico-lineal">PARTE I: Considere el proceso AR(1) que está definido por el siguiente proceso estocástico lineal:</a></li>
+  <li><a href="#parte-ii-repita-el-ejercicio-de-la-parte-i-pero-con-phi_11-es-decir-el-proceso-generado-no-cumple-la-condición-de-estacionariedad.-compare-los-resultados-con-la-parte-i." id="toc-parte-ii-repita-el-ejercicio-de-la-parte-i-pero-con-phi_11-es-decir-el-proceso-generado-no-cumple-la-condición-de-estacionariedad.-compare-los-resultados-con-la-parte-i." class="nav-link" data-scroll-target="#parte-ii-repita-el-ejercicio-de-la-parte-i-pero-con-phi_11-es-decir-el-proceso-generado-no-cumple-la-condición-de-estacionariedad.-compare-los-resultados-con-la-parte-i.">PARTE II: Repita el ejercicio de la PARTE I pero con <span class="math inline">\(\phi_1=1\)</span>, es decir, el proceso generado no cumple la condición de estacionariedad. Compare los resultados con la parte I.</a></li>
+  <li><a href="#parte-iii-repita-los-ejercicios-1-6-de-la-parte-ii-pero-con-phi_11.3.-comente-los-resultados." id="toc-parte-iii-repita-los-ejercicios-1-6-de-la-parte-ii-pero-con-phi_11.3.-comente-los-resultados." class="nav-link" data-scroll-target="#parte-iii-repita-los-ejercicios-1-6-de-la-parte-ii-pero-con-phi_11.3.-comente-los-resultados.">PARTE III: Repita los ejercicios 1-6 de la parte II pero con <span class="math inline">\(\phi_1=1.3\)</span>. Comente los resultados.</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/shuwei325/series_ejercicios/edit/main/Lista_4.qmd" class="toc-action"><i class="bi bi-github"></i>Editar esta página</a></li></ul></div></nav>
     </div>
@@ -286,7 +296,8 @@ window.Quarto = {
 <section id="un-estudio-de-simulaciones-del-proceso-ar1" class="level2">
 <h2 class="anchored" data-anchor-id="un-estudio-de-simulaciones-del-proceso-ar1">Un estudio de simulaciones del proceso AR(1)</h2>
 <p>El objetivo de esta práctica es entender los conceptos de estacionariedad de los modelos autorregresivos de orden <span class="math inline">\(1\)</span>, AR(1), mediante simulaciones, con el fin de complementar el aprendizaje de los conceptos teóricos vistos en la clase.</p>
-<p><strong>PARTE I:</strong> Considere el proceso AR(1) que está definido por el siguiente proceso estocástico lineal:</p>
+<section id="parte-i-considere-el-proceso-ar1-que-está-definido-por-el-siguiente-proceso-estocástico-lineal" class="level3">
+<h3 class="anchored" data-anchor-id="parte-i-considere-el-proceso-ar1-que-está-definido-por-el-siguiente-proceso-estocástico-lineal">PARTE I: Considere el proceso AR(1) que está definido por el siguiente proceso estocástico lineal:</h3>
 <p><span class="math display">\[Y_t=C+\phi_1 Y_{t-1}+a_t\]</span> donde <span class="math inline">\(C\)</span> y <span class="math inline">\(\phi_1\)</span> son constantes desconocidas, y <span class="math inline">\(a_t \sim wn(0,\sigma_a^2)\)</span>. Además, recuerde que el proceso AR(1) es estacionario si <span class="math inline">\(|\phi_1|&lt;1\)</span>.</p>
 <ol type="1">
 <li>Vamos a definir primero una función para generar un proceso AR(1) con <span class="math inline">\(C=0\)</span> en donde <span class="math inline">\(a_t \sim N(0,\sigma_a^2)\)</span>, usando el siguiente código:</li>
@@ -375,7 +386,9 @@ window.Quarto = {
 </div>
 </div>
 <p>Comente los resultados y comparelos con la función de autocorrelación y autocorrelación parcial teórica.</p>
-<p><strong>PARTE II:</strong> Repita el ejercicio de la PARTE I pero con <span class="math inline">\(\phi_1=1\)</span>, es decir, el proceso generado no cumple la condición de estacionariedad. Compare los resultados con la parte I.</p>
+</section>
+<section id="parte-ii-repita-el-ejercicio-de-la-parte-i-pero-con-phi_11-es-decir-el-proceso-generado-no-cumple-la-condición-de-estacionariedad.-compare-los-resultados-con-la-parte-i." class="level3">
+<h3 class="anchored" data-anchor-id="parte-ii-repita-el-ejercicio-de-la-parte-i-pero-con-phi_11-es-decir-el-proceso-generado-no-cumple-la-condición-de-estacionariedad.-compare-los-resultados-con-la-parte-i.">PARTE II: Repita el ejercicio de la PARTE I pero con <span class="math inline">\(\phi_1=1\)</span>, es decir, el proceso generado no cumple la condición de estacionariedad. Compare los resultados con la parte I.</h3>
 <ol type="1">
 <li>La función ya está definida en PARTE I.</li>
 <li>Vamos a simular las 10 realizaciones del proceso AR(1) con <span class="math inline">\(C=0\)</span>, <span class="math inline">\(\phi_1=1\)</span>, y <span class="math inline">\(\sigma_a^2=1\)</span>.</li>
@@ -454,7 +467,9 @@ window.Quarto = {
 \Delta Y_t=Y_t-Y_{t-1}.
 \]</span> Analiace el gráfico lineal de <span class="math inline">\(\Delta Y_t\)</span> y su a.c.f.</li>
 </ol>
-<p><strong>PARTE III:</strong> Repita los ejercicios 1-6 de la parte II pero con <span class="math inline">\(\phi_1=1.3\)</span>. Comente los resultados.</p>
+</section>
+<section id="parte-iii-repita-los-ejercicios-1-6-de-la-parte-ii-pero-con-phi_11.3.-comente-los-resultados." class="level3">
+<h3 class="anchored" data-anchor-id="parte-iii-repita-los-ejercicios-1-6-de-la-parte-ii-pero-con-phi_11.3.-comente-los-resultados.">PARTE III: Repita los ejercicios 1-6 de la parte II pero con <span class="math inline">\(\phi_1=1.3\)</span>. Comente los resultados.</h3>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
@@ -471,6 +486,7 @@ Morettin, Pedro A., y Clélia M. C. Toloi. 2006. <em>Análise de Séries Tempora
 Shumway, R., y D. Stoffer. 2016. <em>Time series Analysis and its applications</em>. 4ta ed. Springer.
 </div>
 </div>
+</section>
 </section>
 
 </main> <!-- /main -->
