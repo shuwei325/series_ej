@@ -3,7 +3,7 @@ project:
   output-dir: docs
 book:
   title: "LISTA DE EJERCICIOS"
-  subtitle: "SERIES CRONOLÓGICAS"
+  subtitle: "ANÁLISIS DE SERIES TEMPORALES"
   author: 
    - name: "Shu Wei Chou Chen"
      email: "shuwei.chou@ucr.ac.cr"
@@ -13,7 +13,6 @@ book:
   date-format: "MMMM, YYYY"
   chapters:
     - index.qmd
-    - data.qmd
     - Lista_1.qmd
     - Lista_2.qmd
     - Lista_3.qmd
