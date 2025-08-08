@@ -312,11 +312,17 @@ a_t=\left\lbrace
 <li>Simule los datos de <span class="math inline">\(\epsilon_t\)</span> y <span class="math inline">\(X_t\)</span> de tamaño <span class="math inline">\(T=100\)</span>. Realice gráficos lineales para las dos series simuladas y comente los resultados.</li>
 </ol>
 </div>
+<div id="exr-III8a" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 3.8</strong></span> &nbsp;</p>
+<ol start="5" type="1">
+<li>Sea <span class="math inline">\(Z(t)=A \cos (\lambda t)+B \sin (\lambda t)\)</span>, donde <span class="math inline">\(t=0,\pm 1, ...\)</span> y <span class="math inline">\(\lambda\)</span> es constantes positivas, y <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> son variables aleatorias independientes e independientes entre sí con medias <span class="math inline">\(0\)</span> y variancias <span class="math inline">\(\sigma^2=Var(A)=Var(B)\)</span>. ¿El proceso <span class="math inline">\(Z(t)\)</span> es estacionario? Encuentre la media <span class="math inline">\(E(Z(t))\)</span> y la función de autocovariancia <span class="math inline">\(\gamma(t,t+h)\)</span> de <span class="math inline">\(Z(t)\)</span>.</li>
+</ol>
+</div>
 <div id="exr-III8" class="Exercise theorem exercise">
-<p><span class="theorem-title"><strong>Ejercicio 3.8</strong></span> Sea <span class="math inline">\(Z(t)=\sum\limits_{j=1}^n \left[A_j \cos (\lambda_j t)+B_j \sin (\lambda_j t)\right]\)</span>, donde <span class="math inline">\(t=0,\pm 1, ...\)</span> y <span class="math inline">\(\lambda_1,...,\lambda_n\)</span> son constantes positivas, y <span class="math inline">\(A_j\)</span>, <span class="math inline">\(B_j\)</span> son variables aleatorias independientes e independientes entre sí con medias <span class="math inline">\(0\)</span> y variancias <span class="math inline">\(\sigma_j^2=Var(A_j)=Var(B_j),j=1,...,n\)</span>. El proceso <span class="math inline">\(Z(t)\)</span> es estacionario? Encuentre la media <span class="math inline">\(E(Z(t))\)</span> y la función de autocovariancia <span class="math inline">\(\gamma(t,t+h)\)</span> de <span class="math inline">\(Z(t)\)</span>.</p>
+<p><span class="theorem-title"><strong>Ejercicio 3.9</strong></span> Sea <span class="math inline">\(Z(t)=\sum\limits_{j=1}^n \left[A_j \cos (\lambda_j t)+B_j \sin (\lambda_j t)\right]\)</span>, donde <span class="math inline">\(t=0,\pm 1, ...\)</span> y <span class="math inline">\(\lambda_1,...,\lambda_n\)</span> son constantes positivas, y <span class="math inline">\(A_j\)</span>, <span class="math inline">\(B_j\)</span> son variables aleatorias independientes e independientes entre sí con medias <span class="math inline">\(0\)</span> y variancias <span class="math inline">\(\sigma_j^2=Var(A_j)=Var(B_j),j=1,...,n\)</span>. El proceso <span class="math inline">\(Z(t)\)</span> es estacionario? Encuentre la media <span class="math inline">\(E(Z(t))\)</span> y la función de autocovariancia <span class="math inline">\(\gamma(t,t+h)\)</span> de <span class="math inline">\(Z(t)\)</span>.</p>
 </div>
 <div id="exr-III9" class="Exercise theorem exercise">
-<p><span class="theorem-title"><strong>Ejercicio 3.9</strong></span> Utilice la serie <code>fpp2::goog</code> de la bolsa de valores del Google de 25 de febrero, 2013 a 13 de febrero, 2017.</p>
+<p><span class="theorem-title"><strong>Ejercicio 3.10</strong></span> Utilice la serie <code>fpp2::goog</code> de la bolsa de valores del Google de 25 de febrero, 2013 a 13 de febrero, 2017.</p>
 <ol type="a">
 <li>Haga un gráfico lineal de la serie y comente las características de esta serie.</li>
 <li>Una serie diferenciada <span class="math inline">\(Z_t\)</span> de la serie <span class="math inline">\(Y_t\)</span> es definida como <span class="math display">\[
@@ -327,7 +333,7 @@ Z_t=Y_t-Y_{t-1}.
 </ol>
 </div>
 <div id="exr-III10" class="Exercise theorem exercise">
-<p><span class="theorem-title"><strong>Ejercicio 3.10</strong></span> Compare el modelo de caminata aleatoria con el ejercicio 7. Recuerde que una caminata aleatoria se define como:</p>
+<p><span class="theorem-title"><strong>Ejercicio 3.11</strong></span> Compare el modelo de caminata aleatoria con el ejercicio 7. Recuerde que una caminata aleatoria se define como:</p>
 <p><span class="math display">\[X_t= X_{t-1}+ \epsilon_t,\]</span> donde <span class="math inline">\(\epsilon_t \sim N(0,\sigma^2)\)</span>.</p>
 <ol type="a">
 <li>Simule una secuencia de variables aleatorias normales con media <span class="math inline">\(0\)</span> y variancia <span class="math inline">\(1\)</span>.</li>
@@ -342,7 +348,7 @@ Z_t=Y_t-Y_{t-1}.
 <p><a href="#exr-III4" class="quarto-xref">Ejercicio&nbsp;<span>3.4</span></a> (a) <span class="math inline">\(E(Z_t)=0, \forall t \in \mathbb{Z}\)</span>. (c) <span class="math inline">\(\rho(t,s)=1, ~\text{si}~t=s\)</span> y <span class="math inline">\(\rho(t,s)=0, ~\text{si}~t \neq s\)</span>.</p>
 <p><a href="#exr-III6" class="quarto-xref">Ejercicio&nbsp;<span>3.6</span></a> Es estacionario.</p>
 <p><a href="#exr-III7" class="quarto-xref">Ejercicio&nbsp;<span>3.7</span></a> Es estacionario.</p>
-<p><a href="#exr-III8" class="quarto-xref">Ejercicio&nbsp;<span>3.8</span></a> Es estacionario.</p>
+<p><a href="#exr-III8" class="quarto-xref">Ejercicio&nbsp;<span>3.9</span></a> Es estacionario.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">

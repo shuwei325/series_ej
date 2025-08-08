@@ -209,11 +209,6 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./Soluciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Soluciones de ejercicios seleccionados</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Referencias</span></a>
   </div>
@@ -248,10 +243,8 @@ window.Quarto = {
 </header>
 
 
-<ol type="1">
-<li>Considere el modelo <span class="math inline">\(SARIMA(0,1,2)(0,1,1)_{12}\)</span>: <span class="math display">\[\nabla \nabla_{12} Z_t=(1-\Theta_{12} B^{12})(1-\theta_1 B-\theta_2 B^2)a_t\]</span></li>
-</ol>
-<!-- -->
+<div id="exr-VI1" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 6.1</strong></span> Considere el modelo <span class="math inline">\(SARIMA(0,1,2)(0,1,1)_{12}\)</span>: <span class="math display">\[\nabla \nabla_{12} Z_t=(1-\Theta_{12} B^{12})(1-\theta_1 B-\theta_2 B^2)a_t\]</span></p>
 <ol type="a">
 <li>Escriba el modelo en la forma de un modelo ARMA.</li>
 <li>¿Cuál es el orden del modelo ARMA resultante?</li>
@@ -259,11 +252,9 @@ window.Quarto = {
 <li>Simule este modelo en R con <span class="math inline">\(T=1000\)</span> y observe la f.a.c. y f.a.c.p. estimada.</li>
 <li>Realice la diferencia no estacional y estacional. Comente la f.a.c. y f.a.c.p. estimada y comparelo con el punto d.</li>
 </ol>
-<!-- -->
-<ol start="2" type="1">
-<li>Considere el modelo <span class="math inline">\(SARIMA(0,0,1)(0,1,1)_{12}\)</span>.</li>
-</ol>
-<!-- -->
+</div>
+<div id="exr-VI2" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 6.2</strong></span> Considere el modelo <span class="math inline">\(SARIMA(0,0,1)(0,1,1)_{12}\)</span>.</p>
 <ol type="a">
 <li>Escriba explícitamente el modelo.</li>
 <li>Escriba el modelo en la forma de un modelo ARMA.</li>
@@ -271,36 +262,31 @@ window.Quarto = {
 <li>Simule este modelo en R con <span class="math inline">\(T=1000\)</span> y observe la f.a.c. y f.a.c.p. estimada.</li>
 <li>Realice la diferencia estacional. Comente la f.a.c. y f.a.c.p. estimada y comparelo con el punto d.</li>
 </ol>
-<!-- -->
-<ol start="3" type="1">
-<li>En la base de datos <code>cardiovascular.csv</code> se refiere a las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007.</li>
-</ol>
-<!-- -->
+</div>
+<div id="exr-VI3" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 6.3</strong></span> En la base de datos <code>cardiovascular.csv</code> se refiere a las cifras de defunciones por problemas cardiovasculares en Costa Rica en el periodo 2000-2007.</p>
 <ol type="a">
 <li>Ajuste un modelo de SARIMA apropiado.</li>
 <li>Escriba el modelo final ajustado.</li>
 <li>Produzca pronósticos para enero, febrero y marzo de 2008.</li>
 </ol>
-<!-- -->
-<ol start="4" type="1">
-<li>En la base de datos <code>ventas.csv</code> se refiere a las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.</li>
-</ol>
-<!-- -->
+</div>
+<div id="exr-VI4" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 6.4</strong></span> En la base de datos <code>ventas.csv</code> se refiere a las ventas mensuales de un producto realizadas por una empresa en el periodo 2001-2005.</p>
 <ol type="a">
 <li>Ajuste un modelo de SARIMA apropiado.</li>
 <li>Escriba el modelo final ajustado.</li>
 <li>Produzca pronósticos para enero, febrero y marzo de 2006.</li>
 </ol>
-<!-- -->
-<ol start="5" type="1">
-<li>En la base de datos <code>exportacionesFOB.csv</code> se refiere a las exportaciones FOB de Costa Rica (millones) de enero de 2001 a abril de 2008.</li>
-</ol>
-<!-- -->
+</div>
+<div id="exr-VI5" class="Exercise theorem exercise">
+<p><span class="theorem-title"><strong>Ejercicio 6.5</strong></span> En la base de datos <code>exportacionesFOB.csv</code> se refiere a las exportaciones FOB de Costa Rica (millones) de enero de 2001 a abril de 2008.</p>
 <ol type="a">
 <li>Ajuste un modelo de SARIMA apropiado con los datos de 2001 a 2007.</li>
 <li>Escriba el modelo final ajustado.</li>
 <li>Produzca pronósticos para los 4 meses de 2008 y calcule las medidas de precisión.</li>
 </ol>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
